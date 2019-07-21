@@ -14,6 +14,7 @@ setup(
     author_email='dev@nethunters.co.uk',
     description='Enables web traffic and request logs for your Flask app.',
     long_description=long_description,
+    long_description_content_type="text/markdown",
     packages=['flask_web_log'],
     zip_safe=False,
     include_package_data=True,
