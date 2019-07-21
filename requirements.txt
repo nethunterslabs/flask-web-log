@@ -1,0 +1,4 @@
+setuptools>=40
+Flask>=1.0
+jsonpickle>=1.2
+SQLAlchemy>=1.3
