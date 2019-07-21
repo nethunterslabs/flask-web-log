@@ -8,6 +8,7 @@ setup(
     name='Flask-Log',
     version='0.1',
     url='https://github.com/nethunterslabs/flask-log',
+    download_url="https://github.com/nethunterslabs/flask-log/archive/0.1.tar.gz",
     license='Apache 2.0',
     author='Nethunters Dev',
     author_email='dev@nethunters.co.uk',
