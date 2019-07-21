@@ -11,7 +11,7 @@ The following useful request data is logged (full explanations are in the [Flask
 - http_method: HTTP method e.g. GET, POST OPTIONS
 - request_scheme: URL scheme (http or https).
 - http_status: HTTP status code e.g. 200, 301, 404
-- dest_ip: Destination host IP
+- dest_host: Destination host
 - dest_port: Destination host port
 - url: URL requested
 - url_path: URL path requested
