@@ -1,5 +1,5 @@
 # Flask-Log
-Flask-Log enables web traffic, request logging for your flask app in multiple outputs.
+Flask-Log enables request logging for your flask app. It has support for multiple
 
 
 ## Features
@@ -11,7 +11,7 @@ The following useful request data is logged (full explanations are in the [Flask
 - http_method: HTTP method e.g. GET, POST OPTIONS
 - request_scheme: URL scheme (http or https).
 - http_status: HTTP status code e.g. 200, 301, 404
-- dest_host: Destination host
+- dest_ip: Destination host IP
 - dest_port: Destination host port
 - url: URL requested
 - url_path: URL path requested
@@ -79,8 +79,7 @@ The following configuration values are used by Flask-Log:
 
 | Config Value  	| Description                                                                                            	|
 |---------------	|--------------------------------------------------------------------------------------------------------	|
-| LOG_TYPE      	| Format to log out to. Currently supported log formats are: CSV, JSON and SQLITE DB. Defaults to `CSV`. 	|
-| LOG_TO_STDOUT 	| Whether to log to STDOUT. Defaults to `False`.                                                         	|
+| LOG_TYPE      	| Format to log out to. Currently supported log formats are: CSV, JSON, STDOUT and SQLITE DB. Defaults to `CSV`. 	|                                                       	|
 | LOG_FILENAME  	| The filename, without the file extension, for the log. Defaults to `flask-log`.                        	|
 | LOG_LOCATION  	| The directory to log to. Defaults to the current directory.                                            	|
 
