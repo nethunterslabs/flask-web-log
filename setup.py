@@ -15,9 +15,12 @@ setup(
     long_description=long_description,
     packages=['flask_log'],
     zip_safe=False,
+    include_package_data=True,
     platforms='any',
     install_requires=[
-        'Flask>=1.0'
+        'Flask>=1.0',
+        'jsonpickle>=1.2',
+        'SQLAlchemy>=1.3'
     ],
     classifiers=[
         'Environment :: Web Environment',
