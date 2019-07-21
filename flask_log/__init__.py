@@ -25,7 +25,7 @@ def make_new_csv(LOG_FILENAME):
 
 
 def make_new_db(connection, engine, metadata):
-    db_log = db.Table('flask_log', metadata,
+    db_log = db.Table('flask_web_log', metadata,
                       db.Column('id', db.Integer()),
                       db.Column('authorisation', db.String()),
                       db.Column('connection', db.String()),
@@ -84,7 +84,7 @@ class Log(object):
     def init_app(self, app):
         config = app.config.copy()
         config.setdefault('LOG_TYPE', "CSV")
-        config.setdefault('LOG_FILENAME', "flask-log")
+        config.setdefault('LOG_FILENAME', "flask-web-log")
         config.setdefault('LOG_LOCATION', "")
         LOG_TYPE = config.get('LOG_TYPE')
         LOG_FILENAME = config.get('LOG_FILENAME')
@@ -102,10 +102,10 @@ class Log(object):
                                       connect_args={'check_same_thread': False})
             connection = engine.connect()
             metadata = db.MetaData()
-            if not engine.dialect.has_table(connection, table_name="flask_log"):
+            if not engine.dialect.has_table(connection, table_name="flask_web_log"):
                 db_log = make_new_db(connection, engine, metadata)
             else:
-                db_log = db.Table('flask_log', metadata,
+                db_log = db.Table('flask_web_log', metadata,
                                   autoload=True, autoload_with=engine)
 
         with app.app_context():
