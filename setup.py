@@ -5,10 +5,10 @@ with open(path.join(path.abspath(path.dirname(__file__)), 'README.md'), encoding
     long_description = f.read()
 
 setup(
-    name='Flask-Log',
+    name='Flask-Web-Log',
     version='0.1',
-    url='https://github.com/nethunterslabs/flask-log',
-    download_url="https://github.com/nethunterslabs/flask-log/archive/0.1.tar.gz",
+    url='https://github.com/nethunterslabs/flask-web-log',
+    download_url="https://github.com/nethunterslabs/flask-web-log/archive/0.1.tar.gz",
     license='Apache 2.0',
     author='Nethunters Dev',
     author_email='dev@nethunters.co.uk',
