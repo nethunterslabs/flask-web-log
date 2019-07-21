@@ -1,5 +1,5 @@
-# Flask-Log
-Flask-Log enables request logging for your flask app. It has support for multiple
+# Flask-Web-Log
+Flask-Web-Log enables request logging for your flask app. It has support for multiple
 
 
 ## Features
@@ -28,7 +28,7 @@ The following useful request data is logged (full explanations are in the [Flask
 - user(remote_user): If the server supports user authentication, and the script is protected, this attribute contains the username the user has authenticated as.
 
 
-Flask-Log can log requests to the following formats:
+Flask-Web-Log can log requests to the following formats:
 - CSV
 - JSON
 - SQLITE DB
@@ -36,14 +36,14 @@ Flask-Log can log requests to the following formats:
 
 ## Installation
 
-You can install Flask-Log using pip:
+You can install Flask-Web-Log using pip:
 ```bash
 pip install flask_log
 ```
 or directly from source:
 ```bash
-git clone git@github.com:nethunters/flask-log.git
-cd flask-log
+git clone git@github.com:nethunters/flask-web-log.git
+cd flask-web-log
 python setup.py install
 ```
 
@@ -75,13 +75,13 @@ if __name__ == '__main__':
 ```
 
 ## Configuration
-The following configuration values are used by Flask-Log:
+The following configuration values are used by Flask-Web-Log:
 
 | Config Value  	| Description                                                                                            	|
 |---------------	|--------------------------------------------------------------------------------------------------------	|
 | LOG_TYPE      	| Format to log out to. Currently supported log formats are: CSV, JSON, STDOUT and SQLITE DB. Defaults to `CSV`. 	|                                                       	|
-| LOG_FILENAME  	| The filename, without the file extension, for the log. Defaults to `flask-log`.                        	|
+| LOG_FILENAME  	| The filename, without the file extension, for the log. Defaults to `flask-web-log`.                        	|
 | LOG_LOCATION  	| The directory to log to. Defaults to the current directory.                                            	|
 
 ## License
-Flask-Log is licensed under the Apache2.0 license. See [License](https://github.com/nethunterslabs/flask-log/blob/master/LICENSE).
+Flask-Web-Log is licensed under the Apache2.0 license. See [License](https://github.com/nethunterslabs/flask-web-log/blob/master/LICENSE).
