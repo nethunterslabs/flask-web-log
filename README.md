@@ -38,7 +38,7 @@ Flask-Web-Log can log requests to the following formats:
 
 You can install Flask-Web-Log using pip:
 ```bash
-pip install flask_log
+pip install flask_web_log
 ```
 or directly from source:
 ```bash
@@ -48,16 +48,16 @@ python setup.py install
 ```
 
 ## Quickstart
-Import flask_log and initialise.
+Import flask_web_log and initialise.
 ```python
-from flask_log import Log
+from flask_web_log import Log
 Log(app)
 ```
 
 ## Example App
 ```python
 from flask import Flask, request, Response
-from flask_log import Log
+from flask_web_log import Log
 
 app = Flask(__name__)
 app.config["LOG_TYPE"] = "CSV"
